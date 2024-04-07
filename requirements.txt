@@ -1,0 +1,13 @@
+# streamlit関連
+streamlit
+streamlit-aggrid
+pandas
+
+# LangChain
+langchain
+langchain-openai
+langchain_community
+faiss-cpu
+beautifulsoup4
+pypdf
+pycryptodome

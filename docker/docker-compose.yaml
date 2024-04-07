@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  streamlit:
+    image: operation_instructions_bot  # イメージに名前を設定
+    build: ..
+    ports:
+      - "8501:8501"
+    env_file:
+      - ./.env
+    volumes:
+      - ../src/operation_instructions_bot:/app
+      - ../README.md:/app/assets/introduction.md
+    command: streamlit run はじめに.py
